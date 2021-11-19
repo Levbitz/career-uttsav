@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
---*/
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -14080,7 +14070,7 @@ a.text-dark:focus {
   --bg-color: #fff;
   --nav-color: #fff;
   --heading-color: #011627;
-  --footer-color: #080713;
+  --footer-color: #1976d2;
   --border-radius: 6px;
   --border-radius-full: 15px;
   --border-color: transparent;
@@ -16183,7 +16173,7 @@ p.count-text {
 .w3l-footer-29-main p {
   font-size: 17px;
   line-height: 26px;
-  color: #63676b;
+  color: #fff;
 }
 
 .w3l-footer-29-main .footer-list-29 ul li a,
@@ -16192,7 +16182,7 @@ p.count-text {
 .w3l-footer-29-main a {
   font-size: 17px;
   line-height: 26px;
-  color: #63676b;
+  color: #fff;
 }
 
 .w3l-footer-29-main .footer-list-29 ul li a:hover,
@@ -18668,12 +18658,12 @@ a.blog-desc1:hover {
   margin-top: 30px !important;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .lb_top_highlight {
     margin-bottom: 50px;
     font-size: 10px !important;
   }
-}
+} */
 
 .lb_location_name {
   font-size: 26px !important;
@@ -18681,15 +18671,38 @@ a.blog-desc1:hover {
   margin-bottom: 2px !important;
 }
 
-.lb_location_highlight {
-  padding: 0px 50px;
-  text-align: center;
-}
-/* lcations */
+@media only screen and (max-width: 600px) {
+  .lb_location_name {
+    font-size: 22px !important;
+    margin-top: 4px !important;
+    margin-bottom: 2px !important;
+  }
+  .lb_location_highlight {
+    padding: 0px 50px;
+    text-align: center;
+  }
+  /* lcations */
 
-/* navbar */
-.lb_register_btn {
-  background: #f35b04;
+  /* navbar */
+  .lb_register_btn {
+    background: #f35b04;
+    color: #fff;
+  }
+}
+
+.lb_subtext {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.lb_subtext {
+  font-size: 24px !important;
   color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .lb_subtext {
+    font-size: 18px !important;
+    color: #fff !important;
+  }
 }
 /* nav bar */
