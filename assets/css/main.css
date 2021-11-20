@@ -17309,7 +17309,7 @@ ul.page-pagination li a.next:hover {
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   width: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .w3l-team-main .team-member,
@@ -17470,10 +17470,10 @@ ul.page-pagination li a.next:hover {
   padding: 25px;
 }
 
-.w3l-blogpost-content .card img {
+/* .w3l-blogpost-content .card img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-}
+} */
 
 .w3l-blogpost-content .author {
   display: grid;
