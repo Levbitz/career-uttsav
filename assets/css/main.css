@@ -18740,4 +18740,15 @@ a.blog-desc1:hover {
     width: 150px;
   }
 }
+
+.lead {
+  color: #fff !important;
+}
+@media only screen and (max-width: 600px) {
+  .lead {
+    color: #fff !important;
+    font-size: 12px !important;
+    margin-top: -10px !important;
+  }
+}
 /* nav bar */
