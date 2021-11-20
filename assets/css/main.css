@@ -18705,4 +18705,13 @@ a.blog-desc1:hover {
     color: #fff !important;
   }
 }
+.lb_middle_logo {
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .lb_middle_logo {
+    width: 150px;
+  }
+}
 /* nav bar */
