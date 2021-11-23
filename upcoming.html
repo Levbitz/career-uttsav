@@ -22,6 +22,19 @@ Author URL: http://mysite.com
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/alt.css" />
     <link rel="stylesheet" href="assets/css/events.css">
+
+    <style>
+        .lb_inner_event_subtitle_event_wrap{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        }
+        .lb_inner_event_subtitle{
+            font-size: 28px;
+            margin-left: 30px;
+        }
+        
+    </style>
   </head>
   <body>
        <header id="site-header" class="fixed-top">
@@ -134,16 +147,17 @@ Author URL: http://mysite.com
       <h1 class="text-center text-danger lb_top_highlight_text">Up coming Events</h1>
     </div>
     <div id="exTab1" class="container">
-      <ul class="lb_tab_wrap"  id="place-tabs" class="nav nav-pills ">
+        
+           <ul style="display: flex;justify-content:space-between;" class="lb_tab_wrap"  id="place-tabs" class="nav nav-pills ">
         <li class="active">
           <a href="#1a" data-toggle="tab">
               <p class="text-center">
                 <img class="tab_img"  src="assets/images/tumukur.jpeg" alt="" />   
               </p>
            
-            <h5 class="text-center text-danger">Tumkur</h5>
-            <h6 class="text-center">Date :11 -12 Dec 2021</h6>
-            <h6 class="text-center">Time:10AM - 7:00pm</h6>
+            <h5 class=" text-danger">Tumkur</h5>
+            <h6 class="text-danger">Date :11 -12 Dec 2021</h6>
+            <h6 class="text-danger">Time:10AM - 7:00pm</h6>
             
           </a>
         </li>
@@ -155,9 +169,9 @@ Author URL: http://mysite.com
                 <img class="tab_img"  src="assets/images/hubli.jpeg" alt="" />   
               </p>
            
-            <h5 class="text-center text-danger">Hubli</h5>
-            <h6 class="text-center">Date :11 -12 Dec 2021</h6>
-            <h6 class="text-center">Time:10AM - 7:00pm</h6>
+            <h5 class=" text-danger">Hubli</h5>
+            <h6 class="text-danger">Date :11 -12 Dec 2021</h6>
+            <h6 class="text-danger">Time:10AM - 7:00pm</h6>
              
             </div>
           </a>
@@ -170,22 +184,24 @@ Author URL: http://mysite.com
                 <img class="tab_img" src="assets/images/bangalore.jpeg" alt="" />   
               </p>
            
-            <h5 class="text-center text-danger">Bangalore</h5>
-            <h6 class="text-center">Date :04 -05 Dec 2022</h6>
-            <h6 class="text-center">Time:10AM - 7:00pm</h6>
+            <h5 class="text-danger">Bangalore</h5>
+            <h6 class="text-danger">Date :04 -05 Dec 2022</h6>
+            <h6 class="text-danger">Time:10AM - 7:00pm</h6>
               
             </div>
           </a>
         </li>
         <!-- <li><a href="#4a" data-toggle="tab">Background color</a>
 			</li> -->
-      </ul>
+      </ul> 
+        </div>
+      
 
       <div style="margin-top: 200px;" class="tab-content clearfix ">
         <div class="tab-pane active" id="1a">
-<div>
+<!-- <div>
    <img height="250px"  width="100%" src="assets/images/tabImg/tumukur.png" alt=""> 
-</div>
+</div> -->
             
           <!-- <h3 class="text-center lb_event_why">Why in Tumkur?</h3>
           <p class="lb_event_subtitle">
@@ -196,8 +212,27 @@ Author URL: http://mysite.com
             for an event of this magnitude
           </p> -->
 
-          <div class="container">
-            <div class="row">
+
+
+          <!--New-->
+          <div id="exTab2" class="container">	
+              <div class="lb_inner_event_subtitle_event_wrap">
+
+<ul class="nav nav-tabs">
+			<li class="active  lb_inner_event_subtitle">
+        <a   href="#tumkurDayOne" data-toggle="tab">Day One</a>
+			</li>
+			<li class="lb_inner_event_subtitle"><a href="#tumkurDayTwo" data-toggle="tab">Day Two</a>
+			</li>
+			
+		</ul>
+              </div>
+
+
+			<div class="tab-content ">
+			  <div class="tab-pane active" id="tumkurDayOne">
+          <h3>Day One Events  11<sup>th</sup>Dec 2021</h3>
+          <div class="row">
               <div class="col-sm-4">
                 <div class="row">
                   <div class="col-sm-4">
@@ -366,24 +401,155 @@ Author URL: http://mysite.com
               
               
             </div>
-          </div>
+				</div>
+				<div class="tab-pane" id="tumkurDayTwo">
+          <h3>Day Two Events</h3>
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                      height="80px"
+                      src="assets/images/icona/unnamed.png"
+                      alt=""
+                    />
+                    <!-- <a href="#" class="btn btn-primary btn-sm">Regester</a> -->
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                   
+                      src="assets/images/icona/five.png"
+                      alt=""
+                    />
+                  
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                   
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                
+                      src="assets/images/icona/six.png"
+                      alt=""
+                    />
+               
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+            
+                      src="assets/images/icona/two.png"
+                      alt=""
+                    />
+                   
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+             
+             
+              
+              
+              
+            </div>
+				</div>
+        
+  </div>
+</div>
+          <!--New-->
+          
         </div>
         <div class="tab-pane" id="2a">
-          <div>
-            <h3 class="text-center lb_event_why">Why in Hubli?</h3>
-            <p class="lb_event_subtitle">
-              Hubli - Dharwad district is home to the prestigious Karnatak
-              University and institutions of excellence such as UAS Dharwad,
-              KIMS, IIT and IIIT. It has nurtured a culture of learning and
-              rightly earned the name of ‘Vidya Kashi’.
-            </p>
 
-            <div class="container">
-              <div class="row">
-                
-                
-                
-<div class="col-sm-4">
+            <!--New Hubli-->
+            <div id="exTab2" class="container">	
+                <div class="lb_inner_event_subtitle_event_wrap">
+<ul class="nav nav-tabs">
+			<li class="active lb_inner_event_subtitle">
+        <a  href="#HubliDayOne" data-toggle="tab">Day One Hubli</a>
+			</li>
+			<li class="lb_inner_event_subtitle"><a href="#HubliDayTwo" data-toggle="tab">Day Two Hubli</a>
+			</li>
+			
+		</ul>
+                </div>
+
+
+			<div class="tab-content ">
+			  <div class="tab-pane active" id="HubliDayOne">
+
+          <h3>Day One Hubli</h3>
+          <div class="row">
+              <div class="col-sm-4">
                 <div class="row">
                   <div class="col-sm-4">
                     <img
@@ -391,203 +557,216 @@ Author URL: http://mysite.com
                       style="margin-bottom: 20px"
                       class="d-block w-100"
                       height="80px"
-                      src="https://picsum.photos/150?image=641"
+                      src="assets/images/icona/unnamed.png"
                       alt=""
                     />
+                    <!-- <a href="#" class="btn btn-primary btn-sm">Regester</a> -->
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                   
+                      src="assets/images/icona/five.png"
+                      alt=""
+                    />
+                  
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                   
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                
+                      src="assets/images/icona/six.png"
+                      alt=""
+                    />
+               
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+            
+                      src="assets/images/icona/two.png"
+                      alt=""
+                    />
+                   
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
               
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-                              
-<div class="col-sm-4">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <img
-                      
-                      style="margin-bottom: 20px"
-                      class="d-block w-100"
-                      height="80px"
-                      src="https://picsum.photos/150?image=641"
-                      alt=""
-                    />
-                    <a href="#" class="btn btn-primary btn-sm">Regester</a>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-                              
-<div class="col-sm-4">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <img
-                      
-                      style="margin-bottom: 20px"
-                      class="d-block w-100"
-                      height="80px"
-                      src="https://picsum.photos/150?image=641"
-                      alt=""
-                    />
-                    <a href="#" class="btn btn-primary btn-sm">Regester</a>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-                              
-<div class="col-sm-4">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <img
-                      
-                      style="margin-bottom: 20px"
-                      class="d-block w-100"
-                      height="80px"
-                      src="https://picsum.photos/150?image=641"
-                      alt=""
-                    />
-                    <a href="#" class="btn btn-primary btn-sm">Regester</a>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-                              
-<div class="col-sm-4">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <img
-                      
-                      style="margin-bottom: 20px"
-                      class="d-block w-100"
-                      height="80px"
-                      src="https://picsum.photos/150?image=641"
-                      alt=""
-                    />
-                    <a href="#" class="btn btn-primary btn-sm">Regester</a>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-                              
-<div class="col-sm-4">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <img
-                      
-                      style="margin-bottom: 20px"
-                      class="d-block w-100"
-                      height="80px"
-                      src="https://picsum.photos/150?image=641"
-                      alt=""
-                    />
-                    <a href="#" class="btn btn-primary btn-sm">Regester</a>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-                              
-<div class="col-sm-4">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <img
-                      
-                      style="margin-bottom: 20px"
-                      class="d-block w-100"
-                      height="80px"
-                      src="https://picsum.photos/150?image=641"
-                      alt=""
-                    />
-                    <a href="#" class="btn btn-primary btn-sm">Regester</a>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="card-block">
-                      <!--           <h4 class="card-title">Small card</h4> -->
-                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
-                          Future Of Medicine
-                      </span> </h5>
-                      <h6>Date:<span class="text-danger">21<sup>st</sup> Jan 2022 </span> </h6>
-                      <h6>Time:<span class="text-danger">11:00 AM-11:30 AM</span></h6>
-                      <p>Venue: <span class="text-danger">Auditorium 5</span></p>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
+              
+             
+             
+              
+              
+              
             </div>
+				</div>
+				<div class="tab-pane" id="HubliDayTwo">
+          <h3>Day Two Hubli</h3>
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                      height="80px"
+                      src="assets/images/icona/unnamed.png"
+                      alt=""
+                    />
+                    <!-- <a href="#" class="btn btn-primary btn-sm">Regester</a> -->
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                   
+                      src="assets/images/icona/five.png"
+                      alt=""
+                    />
+                  
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                   
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                
+                      src="assets/images/icona/six.png"
+                      alt=""
+                    />
+               
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+             
+             
+              
+              
+              
+            </div>
+				</div>
+        
+  </div>
+</div>
+            <!--New Hubli-->
+          <div>
+            
+
           </div>
           <!-- <h3>
             We use the class nav-pills instead of nav-tabs which automatically
@@ -595,143 +774,368 @@ Author URL: http://mysite.com
           </h3> -->
         </div>
         <div class="tab-pane" id="3a">
-          <div>
-            <!-- <h3 class="text-center lb_event_why">Why in Bangalore?</h3> -->
-            <!-- <p class="lb_event_subtitle">
-              Bangalore - A cosmopolitan city in the true sense, Bangalore has
-              embraced people from all over the world. With a myriad of quality
-              institutions, excellent industry connect and an investment
-              friendly environment, Bangalore has proven to be an ideal event
-              destination.
-            </p> -->
-            <div >
-   <img  height="250px"  width="100%" src="assets/images/tabImg/bangalore.jpeg" alt=""> 
-</div>
+          <div><div id="exTab2" class="container">	
+              <div class="lb_inner_event_subtitle_event_wrap">
+<ul class="nav nav-tabs">
+			<li class="active lb_inner_event_subtitle">
+        <a  href="#BangaloreDayOne" data-toggle="tab">Day One</a>
+			</li>
+			<li class="lb_inner_event_subtitle"><a href="#BangaloreDayTwo" data-toggle="tab">Day Two</a>
+			</li>
+			
+		</ul>
+              </div>
 
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <img
-                        class="d-block w-100"
-                        src="https://picsum.photos/150?image=641"
-                        alt=""
-                      />
-                      <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="card-block">
-                        <!--           <h4 class="card-title">Small card</h4> -->
-                        <p>Copy paste the HTML and CSS.</p>
-                        <p>Change around the content for awsomenes</p>
-                        <br />
-                      </div>
-                    </div>
+
+			<div class="tab-content ">
+			  <div class="tab-pane active" id="BangaloreDayOne">
+          <h3>Bangalore Day One</h3>
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                      height="80px"
+                      src="assets/images/icona/unnamed.png"
+                      alt=""
+                    />
+                    <!-- <a href="#" class="btn btn-primary btn-sm">Regester</a> -->
                   </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <img
-                        class="d-block w-100"
-                        src="https://picsum.photos/150?image=641"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="card-block">
-                        <!--           <h4 class="card-title">Small card</h4> -->
-                        <p>Copy paste the HTML and CSS.</p>
-                        <p>Change around the content for awsomenes</p>
-                        <br />
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <img
-                        class="d-block w-100"
-                        src="https://picsum.photos/150?image=641"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="card-block">
-                        <!--           <h4 class="card-title">Small card</h4> -->
-                        <p>Copy paste the HTML and CSS.</p>
-                        <p>Change around the content for awsomenes</p>
-                        <br />
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <img
-                        class="d-block w-100"
-                        src="https://picsum.photos/150?image=641"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="card-block">
-                        <!--           <h4 class="card-title">Small card</h4> -->
-                        <p>Copy paste the HTML and CSS.</p>
-                        <p>Change around the content for awsomenes</p>
-                        <br />
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <img
-                        class="d-block w-100"
-                        src="https://picsum.photos/150?image=641"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="card-block">
-                        <!--           <h4 class="card-title">Small card</h4> -->
-                        <p>Copy paste the HTML and CSS.</p>
-                        <p>Change around the content for awsomenes</p>
-                        <br />
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-5">
-                      <img
-                        class="d-block w-100"
-                        src="https://picsum.photos/150?image=641"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-sm-7">
-                      <div class="card-block">
-                        <!--           <h4 class="card-title">Small card</h4> -->
-                        <p>Copy paste the HTML and CSS.</p>
-                        <p>Change around the content for awsomenes</p>
-                        <br />
-                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
-                      </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                   
+                      src="assets/images/icona/five.png"
+                      alt=""
+                    />
+                  
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                   
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                
+                      src="assets/images/icona/six.png"
+                      alt=""
+                    />
+               
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+            
+                      src="assets/images/icona/two.png"
+                      alt=""
+                    />
+                   
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                     
+                      src="assets/images/icona/three.png"
+                      alt=""
+                    />
+                    
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                      height="80px"
+                      src="assets/images/icona/unnamed.png"
+                      alt=""
+                    />
+                 
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+             
+              
+              
+              
             </div>
+				</div>
+				<div class="tab-pane" id="BangaloreDayTwo">
+          <h3>Bangalore Day Two</h3>
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                      height="80px"
+                      src="assets/images/icona/unnamed.png"
+                      alt=""
+                    />
+                    <!-- <a href="#" class="btn btn-primary btn-sm">Regester</a> -->
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                   
+                      src="assets/images/icona/five.png"
+                      alt=""
+                    />
+                  
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                   
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                
+                      src="assets/images/icona/six.png"
+                      alt=""
+                    />
+               
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+            
+                      src="assets/images/icona/two.png"
+                      alt=""
+                    />
+                   
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                     
+                      src="assets/images/icona/three.png"
+                      alt=""
+                    />
+                    
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img
+                      
+                      style="margin-bottom: 20px"
+                      class="d-block w-100"
+                      height="80px"
+                      src="assets/images/icona/unnamed.png"
+                      alt=""
+                    />
+                 
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <!--           <h4 class="card-title">Small card</h4> -->
+                      <h5>Past Present And <br> <span style="font-weight: bold;" class="text-danger">
+                          Future Of Engineering
+                      </span> </h5>
+                      <h6>Date:<span class="text-danger">1<sup>st</sup> Dec 2021 </span> </h6>
+                      <h6>Time:<span class="text-danger">10:00 AM-11:00 AM</span></h6>
+                      <p>Venue: <span class="text-danger">Auditorium 2</span></p>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+             
+              
+              
+              
+            </div>
+				</div>
+        
+  </div>
+</div>
+
           </div>
         </div>
       </div>
@@ -749,6 +1153,38 @@ Author URL: http://mysite.com
 
     <br />
     <br />
+
+
+
+
+
+
+
+
+<!-- <div id="exTab2" class="container">	
+<ul class="nav nav-tabs">
+			<li class="active">
+        <a  href="#BangaloreDayOne" data-toggle="tab">Day One</a>
+			</li>
+			<li><a href="#BangaloreDayTwo" data-toggle="tab">Day Two</a>
+			</li>
+			
+		</ul>
+
+			<div class="tab-content ">
+			  <div class="tab-pane active" id="BangaloreDayOne">
+          <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+				</div>
+				<div class="tab-pane" id="BangaloreDayTwo">
+          <h3>Notice the gap between the content and tab after applying a background color</h3>
+				</div>
+        
+  </div>
+</div> -->
+
+
+
+
 
   <!-- footer -->
     <img height="80px" width="100%" src="assets/images/footerImg/three.png" alt="">
